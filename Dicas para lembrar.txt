@@ -1,0 +1,85 @@
+ATALHOS PRODUTIVOS
+- Segurar ALT paara editar mais de uma linha
+
+LINKS
+- Usa-se a tag "<a>", onde o padrão é que o linque substitua a visão do conteúdo atual, podendo-se incluir o atributo "target" com o valor "_blank"
+
+3 FORMAS DE APLICAR ESTILOS CSS (todo css é aplicado ao html por meio da tag style)
+- css inline: Inserido não linha onde se pretente estilizar
+- css interno: Inserido no Head da página onde se pretente estilizar
+- cc externo: inserido em um documento css separado da página htm, referenciado por meio da tag LINK, dentro do head da página.
+
+DIFERENÇA ENTRE ID E CLASS
+ - O id deve ser exclusivo dentro de na mesma página.
+ - O id é referenciado por meio de: # + NOME DO ID
+ - A mesma class pode ser aplicada a vários, inclusive pode-se aplicar mais de uma.
+ - a class é referenciada por meio de:  . + NOME DA CLASS
+- Observação: Quando "id" e "class" estiverem juntos num mesmo elemento/tag, as configurações do "id" irão sempre sobrepor as configurações do "class" de uma mesma Propriedade de Estilo na hierarquia.
+
+PSEUDO CLASS (conifgurações que acontecem dependendo do estado de um determinado elemento)
+- Ex: se ele está ativo, se ele está habilitado, se ele está vazio, se eles está checad.. etc
+-AS PSEUDO CLASSES são referenciadas por meio de: ":" + nome da pseudo-classe
+- devem estar relacionadas a elementos ou classes
+
+PSEUDO ELEMENTOS (Este eme no conteúdo de onde está sendo aplicado)
+ - Consegue fazer que coisa apareçam antes ou depois, ex: ícones, palavas.. etc.
+
+MODELO DE CAIXAS (existem 2 tipo: box-level e inline-level)
+- propriedades das caixas para serem estilizados:
+ 	 - height (altura)
+	 - windth (lasgura)
+	 - border (borda) *a borda é dentro do elemento
+	 - padding (acochoamento, preenchimento) *da borda pra dentro
+	 - margin (margem) * da borda pra fora
+	 - outline (contorno, traçado) *o traçado, é fora do elemento e dentro da margem.
+-nos atributos que estilizam lados da caixa, deve-se configurar no sentido do relógio, nesta ordem: alto, ld, baixo, le
+ ex: padding - topo: 21px;
+     padding - right: 34px;
+     padding - bottom: 21px;
+     paffing - left: 34px;
+- forma de centralizar uma caixa: "margin: auto"
+-Cataxteristica do Box level: quebra linha e ocupada a largura total da página 
+ Ex: div, h1, p, header... etc
+-Caracteristica do inline level: não quebra linha e não ocupa largura inteira da tela.. 
+ Ex: span, a, code, strong, small.. etc 
+
+UTILIZANDO SHOT HENTS (PROPRIEDADES DE MULTIPLOS VALORES)
+- posso substituir 
+  isso:
+    border-width: 10px;
+    border-style: solid;
+    border-color: bluer;
+
+  pelo shot hents border:
+    border: 10px solid blue
+
+- posso subistituir,
+ isso: 
+	padding-top: 10px
+	padding-reight: 30
+	padding-bottom: 10px
+	padding-left: 30px
+
+ pelo shot hents padding:
+ 	padding: 10ps 30px 10px 30px (obedecendo sempre o sentido horário)
+
+Podemos simplimicar ainda mais qndo queremo lados com o mesmo valor, conforme exemplo abaixo:
+ isso:
+	margin-topo: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+
+ pelo shot hents margin:
+	margin: 10px;
+ 
+GRUPO DE TAGS SEMANTICAS
+- Hoje em dia, existem tags semânticas que dispensam o uso de DIV's em determinados casos, conforme exemplo abaixo:
+    Principais tags:
+	<header> para cabeçalho, não confunda com head (cabeça)
+	<nav> pode ser usada para navegação, como um menu.
+	<main> para o conteúdo principal do bory
+	<footer> para o rodapé.
+ 
+
+ 
