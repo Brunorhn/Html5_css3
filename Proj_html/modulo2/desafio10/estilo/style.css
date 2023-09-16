@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Android';
-    src: url(../fontes/idroid.otf) format('open type');
+    src: url(../fontes/idroid.otf);
     font-weight: normal;
 }
 
@@ -21,6 +21,11 @@
 --font-android: 'Android', cursive;
 }
 
+/*a linha abaixo configura margem e padin 0 para todos os elementos*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     background-color: var(--cor1);
@@ -30,7 +35,12 @@ header {
     background-color: var(--cor4);
 }
 
-#h1principal {
-    color: var(--cor6);
+h1 {
+    font-family: var(--font-destaque);
+}
+h2{
     font-family: var(--font-android);
+}
+p{
+    font-family: var(--font-padrao);
 }
