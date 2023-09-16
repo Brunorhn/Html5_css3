@@ -1,0 +1,8 @@
+Nesse arquivo, irei registrar os princiais atalhos html no vscode.
+
+1 - Ctrl + space = quando clicado dentro de um href, abre uma janela para seleção de arquivo.
+
+2 - Ctrl + clique do mouse = quando clicado dentro de um href que possue um caminho ainda não criado, o vsCode pergunta se vc quer criar o caminho.
+
+3 - Ctrl + Shift + P = abre uma janela onde vc deve escolher envolver com abreviação e a tag que vc desejar. (envelopar)
+

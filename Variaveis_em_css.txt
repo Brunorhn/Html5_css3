@@ -1,0 +1,28 @@
+Dicas de como usar Variáveis em CSS
+
+1 - Pseudo-classe :root
+A pseudo-classe :root em CSS é usada para selecionar o elemento raiz de um documento HTML, que geralmente é o elemento <html>. Ela é frequentemente usada para definir e armazenar variáveis CSS personalizadas, também conhecidas como variáveis de CSS ou "CSS variables". As variáveis CSS são usadas para armazenar valores que podem ser reutilizados em várias partes de uma folha de estilo, facilitando a manutenção e a personalização de um design.
+
+Aqui está um exemplo de como a pseudo-classe :root é usada para definir variáveis CSS:
+
+:root {
+  --cor-primaria: #3498db;
+  --tamanho-fonte: 16px;
+}
+
+Neste exemplo, :root é usado para definir duas variáveis CSS personalizadas:
+
+--cor-primaria: Esta variável armazena uma cor, no caso, a cor azul #3498db.
+
+--tamanho-fonte: Esta variável armazena um tamanho de fonte, no caso, 16px.
+
+Uma vez que as variáveis CSS são definidas na raiz do documento (usando :root), elas podem ser acessadas e utilizadas em qualquer lugar da folha de estilo, tornando mais fácil fazer alterações globais em cores, tamanhos de fonte e outros estilos em todo o site. Por exemplo, você pode usá-las em uma regra CSS da seguinte forma:
+
+body {
+  font-size: var(--tamanho-fonte);
+  background-color: var(--cor-primaria);
+}
+
+Dessa forma, se você quiser mudar a cor principal em todo o site, basta alterar o valor da variável --cor-primaria na raiz do documento, e essa mudança será refletida automaticamente em todas as partes do site onde a variável é utilizada.
+
+Em resumo, a pseudo-classe :root em CSS é usada para selecionar o elemento raiz de um documento HTML e é comumente usada para definir variáveis CSS personalizadas que podem ser reutilizadas em toda a folha de estilo para facilitar a personalização e manutenção do design.
