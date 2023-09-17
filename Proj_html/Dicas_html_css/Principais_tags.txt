@@ -1,0 +1,43 @@
+Nesse arquivo, irei explicar as princiáis tags do html.
+
+1 - <a> (Âncora):
+A tag <a> é usada para criar hiperlinks, permitindo que os usuários cliquem no link para navegar para outra página recurso da web.
+Normalmente, o atributo href é usado com a tag <a> para especificar o URL de destino para o qual o usuário será redirecionado ao clicar no link.
+A tag <a> é usada para criar links clicáveis em texto, imagens ou qualquer outro conteúdo dentro de um documento HTML.
+É comum usar o atributo "target= "_blank" para abrir o link em uma nova aba
+
+2 - <link> (Ligação):
+A tag <link> é usada principalmente na seção <head> de um documento HTML para estabelecer conexões entre o documento atual e recursos externos, como folhas de estilo CSS, ícones de favoritos, feeds RSS e muito mais.
+A tag <link> não cria hiperlinks clicáveis na página visível para os usuários, mas, em vez disso, fornece informações sobre recursos externos relacionados ao documento.
+Além do atributo href, a tag <link> pode incluir outros atributos, dependendo do tipo de relação que está estabelecendo
+
+3 - <iframe>:
+A tag <iframe> (que significa "Inline Frame") é usada em HTML para incorporar um documento HTML dentro de outro documento HTML. Ela cria uma janela retangular em uma página da web que exibe outro documento HTML incorporado dentro dela. Isso permite que você inclua conteúdo de outras páginas da web ou recursos em sua própria página sem precisar redirecionar o usuário para outra página.
+
+4 - <abbr> (abreviação):
+usada como uma janela de informação sobre determinada palavra
+
+5 - <main> (conteúdo principal)
+Usada no body, para o conteúdo principal.
+
+6 - <picture>:
+A tag <picture> é uma tag HTML5 que é usada para fornecer várias fontes de imagens para um elemento <img>. Ela permite que você especifique diferentes versões de uma imagem com resoluções ou formatos diferentes e permite que o navegador escolha automaticamente a imagem mais apropriada com base nas características do dispositivo do usuário, como tamanho da tela e resolução.
+
+A estrutura básica de uma tag <picture> envolve a inclusão de uma ou mais tags <source> dentro dela, cada uma com diferentes versões da imagem. A tag <img> também é incluída como uma alternativa de fallback caso nenhuma das fontes de imagem especificadas seja suportada pelo navegador.
+
+Aqui está um exemplo de uso da tag <picture>
+
+<picture>
+  <source srcset="imagem-grande.jpg" media="(min-width: 1024px)">
+  <source srcset="imagem-media.jpg" media="(min-width: 768px)">
+  <img src="imagem-pequena.jpg" alt="Descrição da imagem">
+</picture>
+
+7 - <source>:
+As tags <source> fornecem diferentes versões da imagem  vídeos com base em condições de mídia (como largura de tela). O navegador selecionará a primeira imagem ou vídeos que corresponder às condições de mídia do dispositivo.
+
+O atributo "media" dentro de uma tag <source> é usado para especificar condições de mídia nas quais a fonte de mídia (como uma imagem ou um vídeo) deve ser usada. Ele permite que você defina regras de mídia para escolher qual versão da mídia deve ser carregada com base nas características do dispositivo do usuário, como tamanho da tela, resolução, tipo de dispositivo, entre outros.
+
+A sintaxe básica do atributo media segue o formato media="(condições)", onde as condições são expressões de mídia que descrevem as características do dispositivo. As condições podem ser baseadas em vários atributos, como largura da tela, altura da tela, orientação, resolução de tela, tipo de dispositivo e muito mais.
+
+
